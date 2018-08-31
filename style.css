@@ -176,7 +176,7 @@ h4{
 }}
 /*Mobile style*/
 .fpics{
-	background-color: white;
+	background-color: grey; /*change back to white*/
 	/*width: 100%;
 	height: 300px;*/
 	width: auto;
