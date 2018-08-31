@@ -5,9 +5,6 @@ body{
 
 /*NAVBAR*/
 /* Add a black background color to the top navigation */
-#container0{
-	width: 100%;
-}
 .topnav {
     background-color: #333;
     /*background-image: url("images\rawpixel-699806-unsplash.jpg");*/
@@ -60,55 +57,19 @@ body{
 #buffer2 {
 	padding: 30px;
 }
-/*topmenu*/
-#topmenu{
 
-	/*height: 100px;*/
-	width: 100%;
-	background-color: pink;
+/*banner div*/
+#bannerimg {
+	background-color: lightgrey;
+	margin:auto;
+	height: auto;
+	width:100%;
 	display:flex;
 	justify-content: flex-start;
 
 }
-/*dropdown button style*/
-.dropbtn {
-    background-color: lightgrey;/*#4CAF50*/
-    color: black;
-    padding: 10px 90px 10px 90px;
-    font-size: 16px;
-    border: none;
-    font-family: 'Anton', sans-serif;
-}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding-top: 13px;
-    
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 104.55px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: lightgrey;}
-/*banner div*/
+@media screen and (min-width: 700px){
 #banner {
 	background-color: lightgrey;
 	margin:auto;
@@ -117,13 +78,8 @@ body{
 	display:flex;
 	justify-content: flex-start;
 
-}
+}}
 
-/*banner pic*/
-#titlebanner {
-	
-}
-/*middle snap pics and text style*/
 
 #values {
 	display:flex;
@@ -131,70 +87,8 @@ body{
 	flex-direction: column;
 	height: auto;
 	width: 100%;
-	padding: 20px;
-	/*border-style: solid;
+		/*border-style: solid;
 	border-color: black;*/
-}
-
-#container1{
-	/*background-color: grey;*/
-	border-radius: 5px;
-	margin: auto;
-	width: 100%;
-	height: auto;
-	display:flex;
-	justify-content: space-between;
-
-}
-
-
-.snapshot{
-	background-color: white;
-	width: 500px;
-	height: auto;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 5px;
-	border-style: solid;
-	border-color: white;
-}
-
-.fpics{
-	background-color: lightgrey;
-	width: 100%;
-	height: 300px;
-	
-	
-
-}
-
-.textgrid{
-	/*background-color:lightblue;*/
-	width: 490px;
-	height: auto;
-	padding-left: 10px;
-	
-}
-
-/*bottom footer/banner style*/
-#container2{
-	background-color: lightgrey;
-	border-radius: 5px;
-	border-style: solid;
-	border-color: white;
-	margin: auto;
-	width: 100%;
-	height: auto;
-	display:flex;
-	justify-content: space-around;
-}
-
-.infofoot{
-	/*background-color: white;*/
-	border-color: grey;
-	width: 300px;
-	height: auto;
 }
 
 h4{
@@ -227,4 +121,130 @@ h4{
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+/*Mobile style*/
+/*@media screen and (max-width: 320px) {*/
+#container1{
+	/*background-color: grey;*/
+	border-radius: 5px;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+/*Desktop style*/
+@media screen and (min-width: 700px) {
+#container1{
+	/*background-color: grey;*/
+	border-radius: 5px;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}}
+/*Mobile style*/
+.snapshot{
+	background-color: white;
+	width: auto;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+}
+/*Desktop style*/
+@media screen and (min-width: 700px){
+	.snapshot{
+	background-color: white;
+	width: 500px;
+	height: auto;
+	display:flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+}}
+/*Mobile style*/
+.fpics{
+	background-color: white;
+	/*width: 100%;
+	height: 300px;*/
+	width: auto;
+	height: auto;
+}
+/*Desktop style*/
+@media screen and (min-width: 700px){
+	.fpics{
+	background-color: white;
+	width: 100%;
+	height: 300px;
+	/*width: auto;
+	height: auto;*/
+}}
+/*Mobile style*/
+.textgrid{
+	/*background-color:lightblue;*/
+	width: auto;
+	height: auto;
+	padding-left: 10px;
+}
+
+/*Main style for mobile phones*/
+/*bottom footer/banner style*/
+/*@media screen and (max-width: 600px) {*/
+/*@media screen and (max-width: 320px) {*/
+/*Mobile style*/
+#container2{
+	background-color: lightgrey;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	
+}
+/*Desktop Style*/
+@media screen and (min-width: 700px) {
+ 	#container2{
+	background-color: lightgrey;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}}
+/*Mobile style*/
+.infofoot{
+	background-color: white;
+	border-color: grey;
+	/*width: 300px;*/
+	width: auto;
+	height: auto;
+}
+/*Desktop Style*/
+@media screen and (min-width: 700px) {
+	.infofoot{
+	background-color: white;
+	border-color: grey;
+	width: 300px;
+	/*width: auto;*/
+	height: auto;
+}
 }
