@@ -97,7 +97,7 @@ h4{
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: grey;
+    background-color: darkgrey;
     color: black;
     cursor: pointer;
     padding: 18px;
